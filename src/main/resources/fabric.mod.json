@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "mineaudioworkstation",
+  "version": "${version}",
+
+  "name": "MineAudioWorkstation",
+  "description": "音ブロックの音域を拡張したり、Minecraftでの音楽制作を補助する機能を追加します。",
+  "authors": [
+    "みねたけ"
+  ],
+  "contact": {
+    "sources": "https://github.com/minetake01/MineAudioWorkstation"
+  },
+
+  "license": "MIT",
+  "icon": "assets/mineaudioworkstation/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.minetake.mineaudioworkstation.MineAudioWorkstation"
+    ]
+  },
+  "mixins": [
+    "mineaudioworkstation.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
