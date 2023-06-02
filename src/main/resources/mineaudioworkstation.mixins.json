@@ -4,6 +4,7 @@
   "package": "net.minetake.mineaudioworkstation.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "NotePropertyMixin"
   ],
   "client": [
     "Mixin"
