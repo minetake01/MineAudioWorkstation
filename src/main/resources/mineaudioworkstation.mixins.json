@@ -7,7 +7,7 @@
     "NotePropertyMixin"
   ],
   "client": [
-    "Mixin"
+    "SoundSystemMixin"
   ],
   "injectors": {
     "defaultRequire": 1
