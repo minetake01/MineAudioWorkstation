@@ -9,6 +9,7 @@ import org.spongepowered.asm.mixin.injection.Slice;
 
 @Mixin(Properties.class)
 public class NotePropertyMixin {
+    // NOTE定数の最大値を24から48に変更する
     @ModifyConstant(
         method = "<clinit>",
         constant = @Constant(intValue = 24),
