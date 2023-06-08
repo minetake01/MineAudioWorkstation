@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 @Mixin(SoundSystem.class)
 public class SoundSystemMixin {
     @Shadow @Final @Mutable
-    private static float MAX_PITCH = 8.0f;
+    private static float MAX_PITCH = Float.MAX_VALUE;
     @Shadow @Final @Mutable
     private static float MIN_PITCH = Float.MIN_VALUE;
 
