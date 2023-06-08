@@ -12,12 +12,22 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 public class SoundSystemMixin {
     @Shadow @Final @Mutable
     private static float MAX_PITCH = 8.0f;
+    @Shadow @Final @Mutable
+    private static float MIN_PITCH = Float.MIN_VALUE;
 
     @ModifyConstant(
         method = "getAdjustedPitch",
         constant = @Constant(floatValue = 2.0f)
     )
     private static float modifyMaxPitch(float original) {
-        return 8.0f;
+        return MAX_PITCH;
+    }
+
+    @ModifyConstant(
+        method = "getAdjustedPitch",
+        constant = @Constant(floatValue = 0.5f)
+    )
+    private static float modifyMinPitch(float original) {
+        return MIN_PITCH;
     }
 }
