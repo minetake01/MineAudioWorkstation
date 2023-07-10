@@ -16,6 +16,8 @@
   - `/playspeed repeater [delay_level] [bpm]`: RSリピーターの遅延レベル(1~4)を指定し、その遅延間隔がbpmになるようにサーバーのティックレートを変更する。
   - `/playspeed multiply [formula]`: 現在のサーバーのティックレートに乗算を行う。formulaは数値と文字列で簡単な式を記述可能。
   - `/playspeed reset`: サーバーのティックレートをデフォルトに戻す。
+  - `/soundspeed [formula]`: ゲーム内の全ての音声の再生速度をformulaの値に従って変更する。formulaは数値と文字列で簡単な式を記述可能。
+  - `/soundspeed reset`: 音声の再生速度をデフォルトに戻す。
   - `/movespeed [player] [distance] [bpm]`: 指定したプレイヤーの移動速度を、指定した距離が指定したbpmの1拍分の時間で移動できる速度に変更する。
   - `/movespeed reset [player]`: 指定したプレイヤーの移動速度をデフォルトに戻す。
   - `/keepdirection [player] [direction]`: 指定したプレイヤーの向いている方向を指定した方向に常に強制する。縦方向には動かせる。
