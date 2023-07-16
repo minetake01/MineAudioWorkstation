@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "mineaudioworkstation:block/expanded_note_block" }
+  }
+}
